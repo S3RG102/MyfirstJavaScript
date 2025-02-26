@@ -1,8 +1,27 @@
-function submit(){
-    const a = Number(document.querySelector('.SJ').value);
-    const b = Number(document.querySelector('.SF').value);
+document.querySelector('#add').addEventListener('click', function(){
 
-    let c = a + b;
+    const a = Number(document.querySelector('#num1').value);
+    const b = Number(document.querySelector('#num2').value);
+    document.querySelector('#result').textContent = a+b;
+});
 
-    document.querySelector('.text-a').value = c;
-}
+document.querySelector('#subtract').addEventListener('click', function(){
+
+    const a = Number(document.querySelector('#num1').value);
+    const b = Number(document.querySelector('#num2').value);
+    document.querySelector('#result').textContent = a-b;
+});
+
+document.querySelector('#multiply').addEventListener('click', function(){
+
+    const a = Number(document.querySelector('#num1').value);
+    const b = Number(document.querySelector('#num2').value);
+    document.querySelector('#result').textContent = a*b;
+});
+
+document.querySelector('#divide').addEventListener('click', function(){
+
+    const a = Number(document.querySelector('#num1').value);
+    const b = Number(document.querySelector('#num2').value);
+    document.querySelector('#result').textContent = a/b;
+});
